@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semantic Web – Ask for your grade details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Semantic Web</h1>
+    <p class="lead">Ask Prof. Remzi Celebi for your grade details.</p>
+
+    <label for="name">Your name <span class="optional">(optional)</span></label>
+    <input id="name" type="text" autocomplete="name" placeholder="Used only to sign the email">
+
+    <button id="send" type="button" class="primary">Ask for your grade details</button>
+
+    <p class="alt-label">Prefer a specific mail client?</p>
+    <div class="alts">
+      <button id="web" type="button">Outlook on the web</button>
+      <button id="app" type="button">Outlook app</button>
+    </div>
+
+    <p class="note">
+      Each click picks one of several polite drafts at random and opens it in your
+      mail client. You review it and press send yourself. Nothing is collected,
+      stored or sent from this page: your name stays in your browser and is only
+      written into the draft.
+    </p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
